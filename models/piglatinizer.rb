@@ -11,8 +11,8 @@ class PigLatinizer
       if a == "a" || a == "e" || a == 'i' || a == "I" || a == "o" || a == 'u'
       index = input.index(a)
       
-    end
-    end  
+      end
+      end  
   end
   
  def piglatinize(user_phrase)
@@ -30,12 +30,12 @@ class PigLatinizer
       end_of_word = word[index ..(word.length - 1)]
       index <= 0 ? start_of_word = word[0] : start_of_word = word[0..index - 1]
       start_of_word << "ay" 
-    end_of_word << start_of_word 
-    end_of_word
+      end_of_word << start_of_word 
+      end_of_word
       
       end
     
-  end
-  piggy.join(" ")
- end 
+      end
+      piggy.join(" ")
+      end 
 end
