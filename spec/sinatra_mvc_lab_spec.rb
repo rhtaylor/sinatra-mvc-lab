@@ -19,10 +19,10 @@ describe "Pig Latinizer App" do
     end
 
     it "renders the form directions on the page" do
-      expect(last_response.body).to include("<form method="POST" action="/piglatinize">
+      expect(last_response.body).to include(`<form method="POST" action="/piglatinize">
       <p>Word:<input type="text" name="user_phrase"></p>
       <input type="submit" name="submit">
-    </form>")
+    </form>`)
     end
 
     it "renders the input field for the phrase" do
